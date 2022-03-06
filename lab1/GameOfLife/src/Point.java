@@ -25,11 +25,18 @@ public class Point {
 	}
 
 	public void calculateNewState() {
-		//TODO: insert logic which updates according to currentState and 
+		//TODO: insert logic which updates according to currentState and
 		//number of active neighbors
 		int counter = countActiveNeighbors();
-		if (this.getState()==0 && counter==3) this.nextState=1;
-		else if (this.getState()==1 && !(counter==2 || counter==3)) this.nextState=0;
+		if (this.getState()==0){
+			if( counter==3) this.nextState=1;
+			else this.nextState=0;
+		}
+		if (this.getState()==1) {
+			if (!(counter == 2 || counter == 3)) this.nextState = 0;
+			else this.nextState=1;
+		}
+
 	}
 
 	public void changeState() {
