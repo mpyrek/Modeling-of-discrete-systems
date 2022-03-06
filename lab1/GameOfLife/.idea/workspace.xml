@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f62eac02-523e-4b4f-a5da-198a8fb3aaf5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="25pXuMIMfLZqX3AhVwKEGOnBxHc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.startup.tasks" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Program" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Program" />
+      <module name="GameOfLife" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f62eac02-523e-4b4f-a5da-198a8fb3aaf5" name="Default Changelist" comment="" />
+      <created>1646225223224</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646225223224</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1646562885332">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1646562885332" />
+    <state x="518" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1646564565383">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="518" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1646564565383" />
+    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1646225303644">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1646225303644" />
+    <state x="349" y="67" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1646225299801">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="67" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1536.824@0.0.1536.824" timestamp="1646225299801" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1646564450142">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1646564450142" />
+    <state width="1537" height="140" key="GridCell.Tab.0.bottom" timestamp="1646565435412">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="140" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646565435412" />
+    <state width="1537" height="140" key="GridCell.Tab.0.center" timestamp="1646565435412">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="140" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646565435412" />
+    <state width="1537" height="140" key="GridCell.Tab.0.left" timestamp="1646565435412">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="140" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646565435412" />
+    <state width="1537" height="140" key="GridCell.Tab.0.right" timestamp="1646565435412">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="140" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646565435412" />
+    <state width="746" height="261" key="GridCell.Tab.1.bottom" timestamp="1646562366965">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646562366965" />
+    <state width="746" height="261" key="GridCell.Tab.1.center" timestamp="1646562366965">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1646562366965" />
+    <state width="746" height="261" key="GridCell.Tab.1.left" timestamp="1646562366965">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1646562366965" />
+    <state width="746" height="261" key="GridCell.Tab.1.right" timestamp="1646562366965">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1646562366965" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1646564755645">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1646564755645" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1646564360639">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1646564360639" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1646562605703">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1646562605703" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1646565104697">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1646565104697" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GameOfLife$Program.ic" NAME="Program Coverage Results" MODIFIED="1646562607648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
