@@ -43,7 +43,7 @@ public class Point {
 
 	public void updatePresure() {
 		if(this.type==0) this.pressure = this.pressure - (float) 0.5*(this.nVel+this.wVel+this.eVel+this.sVel);
-		if(this.pressure==2) {
+		if(this.type==2) {
 			double radians = Math.toRadians(sinInput);
 			this.pressure = (float) (Math.sin(radians));
 		}
