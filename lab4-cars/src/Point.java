@@ -1,6 +1,4 @@
-import java.math.*;
 
-//program pokazuje manerw wyprzedzania 
 
 public class Point {
     int type;
@@ -8,7 +6,6 @@ public class Point {
     boolean moved = false;
     int v;
     Point prev;
-    int iteration;
     Point neighbour;
     Boolean is_right;
     int maxV;
@@ -16,17 +13,16 @@ public class Point {
 
     public void move() {
         if (this.type != 0 && !this.moved && this.neighbour.type == 0) {
-//            if (!this.is_right && this.check_condition_to_return()) {
-//                System.out.println("wracaj");
-//                this.neighbour.type = this.type;
-//                this.neighbour.v = this.v -1;
-//                this.neighbour.maxV = this.maxV;
-//                this.neighbour.is_right = true;
-//                this.type = 0;
-//                this.moved = true;
-//                this.neighbour.moved = true;
+            if (!this.is_right && this.check_condition_to_return()) {
+                this.neighbour.type = this.type;
+                this.neighbour.v = this.v ;
+                this.neighbour.maxV = this.maxV;
+                this.neighbour.is_right = true;
+                this.type = 0;
+                this.moved = true;
+                this.neighbour.moved = true;
 
-            if (this.is_right && this.overtake() && this.check_condition_to_overtake() && this.neighbour.type == 0) {
+            } else if (this.is_right  && this.check_condition_to_overtake() && overtake()) {
                 this.neighbour.type = this.type;
                 this.neighbour.v = this.v + 1;
                 this.neighbour.maxV = this.maxV;
@@ -34,25 +30,19 @@ public class Point {
                 this.type = 0;
                 this.moved = true;
                 this.neighbour.moved = true;
-                int distance = 0;
-                Point temp = this;
-                while (temp.next.type == 0 && distance < this.v) {
-                    distance++;
-                    temp = temp.next;
-                }
-                this.iteration = distance;
             }
         }
 
 
-        if (this.moved == false && this.type != 0) {
+        if (!this.moved && this.type != 0) {
             int distance = 0;
             Point temp = this;
             while (temp.next.type == 0 && distance < this.v) {
                 distance++;
                 temp = temp.next;
             }
-
+            if (distance < this.v) this.v = distance;
+            else if ( this.v < this.maxV) this.v = this.v +1;
             temp.type = this.type;
             this.type = 0;
             this.moved = true;
@@ -60,21 +50,23 @@ public class Point {
             temp.v = this.v;
             temp.maxV = this.maxV;
             this.v = 0;
+            this.maxV  = 0;
         }
     }
 
-    private boolean overtake() {
+    private boolean overtake(){
         int distance = 0;
         Point temp = this;
-        while (temp.next.type == 0 && distance < this.v) {
+        while (temp.next.type == 0 && distance < this.v+1) {
             distance++;
             temp = temp.next;
         }
-        return (distance < this.v);
+        if(temp.next.type!= 0 ) return true;
+        return false;
     }
 
     private boolean check_condition_to_overtake() {
-        boolean first_condition = (this.v <= this.maxV);
+        boolean first_condition = (this.v < this.maxV);
         boolean second_condition = true;
         boolean third_condition = true;
         boolean fourth_condition = true;
@@ -101,8 +93,8 @@ public class Point {
         Point check_next_neighbour = this.neighbour;
         distance = 0;
 
-        while (check_next_neighbour.prev.type == 0 && distance <= 7) {
-            check_next_neighbour = check_next_neighbour.prev;
+        while (check_next_neighbour.next.type == 0 && distance <= 7) {
+            check_next_neighbour = check_next_neighbour.next;
             distance = distance + 1;
         }
         if (check_next_neighbour.prev.type != 0) fourth_condition = (distance >= this.v);
@@ -131,16 +123,16 @@ public class Point {
             check_back_l = check_back_l.prev;
             distance = distance + 1;
         }
-        if (check_back_l.prev.type != 0) second_condition = (distance <= check_back_l.prev.maxV);
+        if (check_back_l.prev.type != 0) second_condition = (distance < check_back_l.prev.maxV);
 
 
         Point check_next_r = this.neighbour;
         distance = 0;
-        while ((check_next_r.prev.type == 0 || check_next_r.prev.type == 5) && distance <= 7) {
-            check_next_r = check_next_r.prev;
+        while (check_next_r.next.type == 0 && distance < 7) {
+            check_next_r = check_next_r.next;
             distance = distance + 1;
         }
-        if (check_next_r.prev.type != 0 && check_next_r.prev.type != 5) third_condition = (distance >= this.v);
+        if (check_next_r.next.type != 0) third_condition = (distance >= this.v);
 
 
         return first_condition && second_condition && third_condition;
