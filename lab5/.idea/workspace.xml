@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14cb8510-9f2e-4938-9a27-b91f42cc4c06" name="Default Changelist" comment="" />
+    <list default="true" id="14cb8510-9f2e-4938-9a27-b91f42cc4c06" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pedestrians/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pedestrians/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pedestrians/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pedestrians/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pedestrians/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pedestrians/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pedestrians/Pedestrians.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pedestrians/src/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pedestrians/src/GUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pedestrians/src/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pedestrians/src/Program.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab5/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab5/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab5/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Point.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +28,14 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="27QUKolWDJ6lD8I23G52dv4WgVR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -21,6 +43,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -54,22 +78,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1649251813438" />
-    <state width="675" height="135" key="GridCell.Tab.0.bottom" timestamp="1649887135746">
+    <state width="1493" height="135" key="GridCell.Tab.0.bottom" timestamp="1649888813307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="675" height="135" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1649887135746" />
-    <state width="675" height="135" key="GridCell.Tab.0.center" timestamp="1649887135746">
+    <state width="1493" height="135" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1649888813307" />
+    <state width="1493" height="135" key="GridCell.Tab.0.center" timestamp="1649888813307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="675" height="135" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1649887135746" />
-    <state width="675" height="135" key="GridCell.Tab.0.left" timestamp="1649887135746">
+    <state width="1493" height="135" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1649888813307" />
+    <state width="1493" height="135" key="GridCell.Tab.0.left" timestamp="1649888813307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="675" height="135" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1649887135746" />
-    <state width="675" height="135" key="GridCell.Tab.0.right" timestamp="1649887135746">
+    <state width="1493" height="135" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1649888813307" />
+    <state width="1493" height="135" key="GridCell.Tab.0.right" timestamp="1649888813307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="675" height="135" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1649887135746" />
+    <state width="1493" height="135" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1649888813307" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1649883702211">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

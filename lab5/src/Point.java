@@ -53,7 +53,7 @@ public class Point {
 	}
 	
 	public void move(){
-		if (this.isPedestrian) {
+		if (this.isPedestrian && !blocked) {
 			int minimum = 10000000;
 			Point position = null;
 			if (this.type_of_neighborhood == 1) {
