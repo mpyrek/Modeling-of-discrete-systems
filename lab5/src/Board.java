@@ -14,7 +14,7 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
 	private Point[][] points  = {};
 	private int size = 10;
 	public int editType=0;
-	public int type_of_neighborhood = 1;
+	public int type_of_neighborhood = 0;
 
 	public Board(int length, int height) {
 		addMouseListener(this);
@@ -55,19 +55,21 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
 
 		for (int x = 1; x < points.length-1; ++x) {
 			for (int y = 1; y < points[x].length-1; ++y) {
-				points[x][y].neighbors.add(points[x-1][y]);
-				points[x][y].neighbors.add(points[x-1][y+1]);
-				points[x][y].neighbors.add(points[x-1][y-1]);
-				points[x][y].neighbors.add(points[x][y-1]);
-				points[x][y].neighbors.add(points[x][y+1]);
-				points[x][y].neighbors.add(points[x+1][y]);
-				points[x][y].neighbors.add(points[x+1][y+1]);
-				points[x][y].neighbors.add(points[x+1][y]);
-
-				points[x][y].neighbors2.add(points[x-1][y]);
-				points[x][y].neighbors2.add(points[x+1][y]);
-				points[x][y].neighbors2.add(points[x][y-1]);
-				points[x][y].neighbors2.add(points[x][y+1]);
+				if (this.type_of_neighborhood ==1) {
+					points[x][y].neighbors.add(points[x - 1][y]);
+					points[x][y].neighbors.add(points[x - 1][y + 1]);
+					points[x][y].neighbors.add(points[x - 1][y - 1]);
+					points[x][y].neighbors.add(points[x][y - 1]);
+					points[x][y].neighbors.add(points[x][y + 1]);
+					points[x][y].neighbors.add(points[x + 1][y]);
+					points[x][y].neighbors.add(points[x + 1][y + 1]);
+					points[x][y].neighbors.add(points[x + 1][y]);
+				} else {
+					points[x][y].neighbors2.add(points[x - 1][y]);
+					points[x][y].neighbors2.add(points[x + 1][y]);
+					points[x][y].neighbors2.add(points[x][y - 1]);
+					points[x][y].neighbors2.add(points[x][y + 1]);
+				}
 			}
 		}	
 	}
