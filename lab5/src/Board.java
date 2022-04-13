@@ -14,7 +14,7 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
 	private Point[][] points  = {};
 	private int size = 10;
 	public int editType=0;
-	public int type_of_neighborhood = 0;
+	public int type_of_neighborhood = 1;
 
 	public Board(int length, int height) {
 		addMouseListener(this);
@@ -55,7 +55,7 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
 
 		for (int x = 1; x < points.length-1; ++x) {
 			for (int y = 1; y < points[x].length-1; ++y) {
-				if (this.type_of_neighborhood ==1) {
+				if (this.type_of_neighborhood == 1) {
 					points[x][y].neighbors.add(points[x - 1][y]);
 					points[x][y].neighbors.add(points[x - 1][y + 1]);
 					points[x][y].neighbors.add(points[x - 1][y - 1]);
@@ -63,7 +63,7 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
 					points[x][y].neighbors.add(points[x][y + 1]);
 					points[x][y].neighbors.add(points[x + 1][y]);
 					points[x][y].neighbors.add(points[x + 1][y + 1]);
-					points[x][y].neighbors.add(points[x + 1][y]);
+					points[x][y].neighbors.add(points[x + 1][y - 1]);
 				} else {
 					points[x][y].neighbors2.add(points[x - 1][y]);
 					points[x][y].neighbors2.add(points[x + 1][y]);
@@ -71,7 +71,7 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
 					points[x][y].neighbors2.add(points[x][y + 1]);
 				}
 			}
-		}	
+		}
 	}
 	
 	private void calculateField(){
@@ -84,7 +84,7 @@ public class Board extends JComponent implements MouseInputListener, ComponentLi
 					else toCheck.addAll(points[x][y].neighbors2);
 				}
 
-		while(toCheck.isEmpty()) {
+		while(!toCheck.isEmpty()) {
 			if(toCheck.get(0).calcStaticField()) {
 				if(this.type_of_neighborhood == 1) toCheck.addAll(toCheck.get(0).neighbors);
 				else toCheck.addAll(toCheck.get(0).neighbors2);

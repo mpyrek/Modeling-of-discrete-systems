@@ -26,26 +26,22 @@ public class Point {
 	}
 
 	public boolean calcStaticField() {
-		int minimum = this.staticField;
+		int minimum = 1000000000;
 		if (this.type_of_neighborhood == 1) {
 			for (Point neighbor : neighbors) {
-				if (minimum > neighbor.staticField + 1) {
-					minimum = neighbor.staticField + 1;
-				}
+				minimum = min(neighbor.staticField,minimum);
 			}
-			if (minimum != this.staticField) {
-				this.staticField = minimum;
+			if (minimum + 1< this.staticField) {
+				this.staticField = minimum + 1;
 				return true;
 			}
 			return false;
 		} else {
 			for (Point neighbor : neighbors2) {
-				if (minimum > neighbor.staticField + 1) {
-					minimum = neighbor.staticField + 1;
-				}
+				minimum = min(neighbor.staticField,minimum);
 			}
-			if (minimum != this.staticField) {
-				this.staticField = minimum;
+			if (minimum + 1 < this.staticField ) {
+				this.staticField = minimum + 1;
 				return true;
 			}
 			return false;
@@ -58,9 +54,9 @@ public class Point {
 			Point position = null;
 			if (this.type_of_neighborhood == 1) {
 				for (Point neighbor : neighbors) {
-					if ((neighbor.type == 0 || neighbor.type == 2) && !neighbor.blocked) {
-						minimum = min(minimum, neighbor.staticField);
-						if (minimum == this.staticField) position = neighbor;
+					if ((neighbor.type == 0 || neighbor.type == 2) && minimum > neighbor.staticField && !neighbor.blocked) {
+						minimum = neighbor.staticField;
+						position = neighbor;
 					}
 				}
 				if (position != null) {
@@ -75,9 +71,9 @@ public class Point {
 				this.blocked = true;
 			} else {
 				for (Point neighbor : neighbors2) {
-					if ((neighbor.type == 0 || neighbor.type == 2) && !neighbor.blocked) {
-						minimum = min(minimum, neighbor.staticField);
-						if (minimum == this.staticField) position = neighbor;
+					if ((neighbor.type == 0 || neighbor.type == 2) && minimum > neighbor.staticField && !neighbor.blocked) {
+						minimum = neighbor.staticField;
+						position = neighbor;
 					}
 				}
 				if (position != null) {
